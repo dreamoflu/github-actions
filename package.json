@@ -55,21 +55,15 @@
     "nodemon": "^1.19.4",
     "prettier": "^2.2.1"
   },
-  "husky": {
-      "hooks": {
-          "pre-commit": "lint-staged",
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-      }
-  },
   "lint-staged": {
-      "*.js": [
-          "npm run lint",
-          "npm run test:local"
-      ]
+    "*.js": [
+      "npm run lint",
+      "npm run test:local"
+    ]
   },
   "config": {
-      "commitizen": {
-          "path": "node_modules/cz-customizable"
-      }
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   }
 }
